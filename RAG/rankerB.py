@@ -285,7 +285,7 @@ if __name__ == "__main__":
     queries = "data/rag.json"
 
   output_name = "output/bm25-rankerB.json"
-  rerank = True
+  rerank = False
 
   # Reranking is handled centrally by example_reranker.py. After running
   # this retrieval script, invoke the reranker on the generated output if
