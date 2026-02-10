@@ -243,7 +243,7 @@ if __name__ == "__main__":
 
     rank_model_name = "BAAI/llm-embedder"
     output_name = "output/embedder-rankerA.json"
-    rerank = True
+    rerank = False
 
     gen_stage_0(corpus, queries, rank_model_name, rerank, None, output_name)
 

@@ -46,8 +46,8 @@ An experimental study comparing four first-stage retrieval methods and their int
 |---|---|---|
 | Ranker A | Dense Embedding | `BAAI/llm-embedder` via LlamaIndex `VectorStoreIndex` |
 | Ranker B | BM25 (Okapi) | Custom `BM25Okapi` class (k1=1.5, b=0.75) |
-| Ranker C | TF-IDF | scikit-learn `TfidfVectorizer` with sentence splitting |
-| Ranker D | Hybrid | Linear combination of BM25 and TF-IDF scores |
+| Ranker C | TF-IDF | Custom `TfidfIndex` class with cosine similarity scoring |
+| Ranker D | Hybrid | Min-max normalized BM25 + TF-IDF score fusion (α=0.5) |
 
 ### Generator Models
 
